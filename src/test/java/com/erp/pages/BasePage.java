@@ -19,7 +19,6 @@ public abstract class BasePage {
     public WebElement email;
 
 
-
     @FindBy(id="password")
     public WebElement password;
 
@@ -27,6 +26,9 @@ public abstract class BasePage {
     public WebElement btn_logIn;
 
 
+
+    //ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a
+    // ul[@class='nav navbar-nav navbar-left oe_application_menu_placeholder']/li/a/span
     public void login(String userNameStr, String passwordStr) {
         email.sendKeys(userNameStr);
         password.sendKeys(passwordStr);
