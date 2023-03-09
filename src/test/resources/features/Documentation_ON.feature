@@ -2,7 +2,7 @@ Feature: Access to the Documentation Page
 
   @US101
   Scenario: Verify user can access Doc page
-    Given user is logged in
+    Given user is logged inside
     When user clicks "POSManager10" button
     And user clicks "Documentation" option
     Then user sees  "documentation" in the url
