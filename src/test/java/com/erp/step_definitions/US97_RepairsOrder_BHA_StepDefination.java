@@ -41,7 +41,7 @@ public class US97_RepairsOrder_BHA_StepDefination {
 
     @And("users should verify {int} column orders")
     public void usersShouldVerifyColumnOrders(int elements) {
-        Assert.assertEquals(elements,repairOrderPage.columns.size());
+        Assert.assertTrue(repairOrderPage.columns.size()==elements);
 
 
     }
