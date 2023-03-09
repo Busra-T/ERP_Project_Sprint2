@@ -4,21 +4,18 @@ Feature: EPR repair order feature
   User story:As a POS & sales manager, I want to get repair order on the Repairs page.
 
 
+  @us106
   Scenario: Verify posmanager can select all the repair orders by clicking the top checkbox
-    When user is on the login page
-    Given user enters valid enter valid "pos_email" and "pos_password"
-    Then  user click on the login button
-    And  user should see Odoo
+    When user is logged in
+    Given user should see Odoo
     Then user click on repair button
-    And  user should be able to select all the repair orders
-    Then user should see "POSManager13" login name on the page
+    And  user should  click on the top ckeckbox
+    Then user should select all the repair orders by clicking the top check box
 
-
-  Scenario: Verify sales_manager can select all the repair orders by clicking the top checkbox
-    When user as sales_manager is on the login page
-    Given user as sales_manager is enters valid enter valid "sale_email" and "sale_password"
-    Then  user as sales_manager click on the login button
-    And  user as sales_manager should see Odoo
-    Then user as sales_manager click on repair button
-    And  user as sales_manager should be able to select all the repair orders
-    Then user as sales_manager should see "SalesManager13" login name on the page
+  @us107
+  Scenario: Verify selesmanager can select all the repair orders by clicking the top checkbox
+    When user as seles manager is logged in
+    Given user as seles manager should see Odoo
+    Then user as seles manager click on repair button
+    And  user as seles manager should  click on the top ckeckbox
+    Then user as  seles manager  select all the repair orders by clicking the top check box
