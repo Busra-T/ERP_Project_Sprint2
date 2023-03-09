@@ -13,7 +13,7 @@ import java.util.Set;
 public class DocumentationAccess_ON {
     DocumentationPage_ON documentationPage_on = new DocumentationPage_ON();
 
-    @Given("user is logged in")
+    @Given("user is logged inside")
     public void user_is_logged_in() {
         documentationPage_on.login("posmanager10@info.com", "posmanager");
     }
