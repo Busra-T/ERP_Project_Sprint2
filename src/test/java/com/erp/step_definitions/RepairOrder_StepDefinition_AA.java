@@ -10,8 +10,8 @@ import org.junit.Assert;
 public class RepairOrder_StepDefinition_AA {
 
     DashBoardPage_AA dashBoardPage_aa=new DashBoardPage_AA();
-    @When("user is logged in")
-    public void user_is_logged_in() {
+    @When("User is logged in page")
+    public void user_is_logged_in_page() {
        dashBoardPage_aa.login("posmanager13@info.com","posmanager");
 
     }

@@ -6,7 +6,7 @@ Feature: EPR repair order feature
 
 
   Scenario: Verify posmanager can select all the repair orders by clicking the top checkbox
-    When user is logged in
+    When User is logged in page
     Given user should see Odoo
     Then user click on repair button
     And  user should  click on the top ckeckbox
