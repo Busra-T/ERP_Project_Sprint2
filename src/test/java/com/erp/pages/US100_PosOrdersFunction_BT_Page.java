@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class US100_PosOrdersFunction_BT_Page {
@@ -18,8 +19,10 @@ public class US100_PosOrdersFunction_BT_Page {
     @FindBy(xpath = "//a[@data-menu-xmlid='point_of_sale.menu_point_root']")
     public WebElement opt_POS;
 
-    @FindBy(xpath = "//a[@data-menu-xmlid='point_of_sale.menu_point_ofsale']")
+
+    @FindBy(xpath = "(//a[contains(.,'Orders')])[6]")
     public WebElement opt_orders ;
+
 
     @FindBy(xpath = "//th[@class='o_list_record_selector']")
     public WebElement cbox_orderRef;
@@ -39,7 +42,13 @@ public class US100_PosOrdersFunction_BT_Page {
     @FindBy(xpath = "//ul//a[contains(.,\"Delete\")]")
     public WebElement delete;
 
+    @FindBy(xpath = "//button[contains(.,'Action')]" )
+    public WebElement dropdown_action ;
 
-  /*  @FindBy()
-    public WebElement ; */
+
+    public List<WebElement> actionOptions=Driver.getDriver().findElements(By.xpath("(html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/ul/li/a)"));
+
+
+
+
 }
