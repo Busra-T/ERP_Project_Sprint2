@@ -29,8 +29,6 @@ public abstract class BasePage {
     public WebElement btn_logIn;
 
 
-
-
     public void login(String userNameStr, String passwordStr) {
         email.sendKeys(userNameStr);
         password.sendKeys(passwordStr);
