@@ -16,8 +16,11 @@ public abstract class BasePage {
     }
 
 
+
     @FindBy(id="login")
     public WebElement email;
+
+
 
     @FindBy(id="password")
     public WebElement password;
