@@ -14,8 +14,8 @@ import org.junit.Assert;
 public class US97_RepairsOrder_BHA_StepDefination {
     US97_RepairsOrder_BHA_Page repairOrderPage = new US97_RepairsOrder_BHA_Page();
 
-    @Given("users already logged in")
-    public void users_already_logged_in() {
+    @Given("users already logged in page")
+    public void users_already_logged_in_page() {
         repairOrderPage.login("posmanager11@info.com", "posmanager");
 
 
