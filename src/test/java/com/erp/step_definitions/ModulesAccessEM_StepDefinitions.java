@@ -36,11 +36,11 @@ public class ModulesAccessEM_StepDefinitions extends BasePage {
     public void useShouldSeeModules(int modules) {
 
 
-
-        Assert.assertTrue(modules == eventManagerPageEM.ModulesAccessButtons.size());
-
+                                    // 15                        15
+        //Assert.assertTrue(modules == eventManagerPageEM.ModulesAccessButtons.size());
+        Assert.assertEquals(modules, eventManagerPageEM.ModulesAccessButtons.size());
         //System.out.println("eventManagerPageEM.ModulesAccessButtons.size() = " + eventManagerPageEM.ModulesAccessButtons.size());
-
+        //eventManagerPageEM.ModulesAccessButtons.contains(modules);
 
     }
 
