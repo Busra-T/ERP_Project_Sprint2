@@ -17,5 +17,7 @@ public class US108_SalesExpensesLogin_BT_StepDefinitions {
     @Then("Users see the correct {string}")
     public void usersSeeTheCorrect(String accountName) {
         Assert.assertEquals(accountName,page.accountHolder.getText());
+
     }
+
 }

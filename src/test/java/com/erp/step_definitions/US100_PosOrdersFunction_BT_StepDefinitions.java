@@ -28,6 +28,7 @@ public class US100_PosOrdersFunction_BT_StepDefinitions extends BasePage {
 
     @Then("user clicks on orders")
     public void userClicksOnOrders() {
+        BrowserUtils.waitForClickablility(page.opt_orders,4);
         page.opt_orders.click();
     }
 
