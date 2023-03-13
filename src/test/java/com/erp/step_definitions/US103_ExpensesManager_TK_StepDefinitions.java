@@ -47,7 +47,7 @@ public class US103_ExpensesManager_TK_StepDefinitions {
 
 
     @Then("user clicks all the modules")
-    public void userClicksAllTheModules() throws InterruptedException {
+    public void userClicksAllTheModules(){
 
         US103_ExpensesDefinitionFunction_TK_Page.calenderButton.click();
         US103_ExpensesDefinitionFunction_TK_Page.notesButton.click();
