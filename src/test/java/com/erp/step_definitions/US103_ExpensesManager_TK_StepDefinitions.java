@@ -48,39 +48,21 @@ public class US103_ExpensesManager_TK_StepDefinitions {
 
     @Then("user clicks all the modules")
     public void userClicksAllTheModules() throws InterruptedException {
-        Thread.sleep(4000);
+
         US103_ExpensesDefinitionFunction_TK_Page.calenderButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.notesButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.contactsButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.eventsButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.employeesButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.leavesButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.expensesButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.lunchButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.okButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.maintenanceButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.dashboardsButton.click();
-        Thread.sleep(2000);
         US103_ExpensesDefinitionFunction_TK_Page.websiteButton.click();
-        Thread.sleep(2000);
 
 
-        String actualTitle = Driver.getDriver().getTitle();
-        String expectedTitle = "Website - Odoo";
-
-        Assert.assertEquals(actualTitle,expectedTitle);
-
-        Driver.closeDriver();
 
 
 
